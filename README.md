@@ -1,4 +1,3 @@
- (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
 diff --git a/README.md b/README.md
 index 95e11c9d6f1fe3698d5264288f250f571140ea2b..9e6fd2d484529a2a42c5e154394f444b11b1296c 100644
 --- a/README.md
@@ -98,6 +97,3 @@ index 95e11c9d6f1fe3698d5264288f250f571140ea2b..9e6fd2d484529a2a42c5e154394f444b
 -- **pyTelegramBotAPI** — работа с Telegram API
 +Этот бот использует polling (`/updates`) и универсальную обработку payload для аудио-вложений (`audio`, `voice`, `document`, `file`).
 +Если в вашей инсталляции MAX Bot API используются другие поля, скорректируйте `extract_payload` в `voice_transcriber_bot.py`.
- 
-EOF
-)
